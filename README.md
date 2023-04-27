@@ -1,17 +1,19 @@
-![python](https://img.shields.io/badge/python-3.9-blue) ![link](https://img.shields.io/badge/Class-NLP-red?link=https://karlstratos.com//left)
+![license](https://img.shields.io/github/license/IBM/zero-shot-classification-boost-with-self-training) ![python](https://img.shields.io/badge/python-3.9-blue) ![uni](https://img.shields.io/badge/University-Rutgers-red) ![class](https://img.shields.io/badge/Class-NLP-blue) ![semester](https://img.shields.io/badge/semester-Spring_2023-yellow) ![contr](https://img.shields.io/badge/Contributers-3-brightgreen) 
 # Zero-shot Classification Boost with Self-training
 
-Code to reproduce the zero-shot self-training experiments from [Gera et al. (2022)](#reference). 
+This is a class project for natural language processing CS533. We forked this repository to implement the self-training method presented in this [paper](https://aclanthology.org/2022.emnlp-main.73)
+
+<!-- Code to reproduce the zero-shot self-training experiments from [Gera et al. (2022)](#reference). 
 
 Using this repository you can: 
 
 1. Download the datasets used in the paper;
 2. Run NLI-based zero-shot text classifiers;
 3. Fine-tune an NLI model using a set of pseudo-labeled examples in an iterative self-training procedure;
-4. Compare the classification performance between the base model and the self-training iterations.
+4. Compare the classification performance between the base model and the self-training iterations. -->
 
 
-**Table of contents**
+<!-- **Table of contents**
 
 [Installation](#installation)
 
@@ -30,10 +32,10 @@ The framework requires Python 3.9
 3. (optional) create a conda environment using `conda create -y --name zero-shot-classification-boost-with-self-training python=3.9` and activate using `conda activate zero-shot-classification-boost-with-self-training`
 4. Install the project dependencies: `pip install -r requirements.txt`. See https://pytorch.org for instructions on installing a GPU compatible pytorch version. For example, if cuda 11.3 is used, the above command would be `pip install -r requirements.txt  --extra-index-url https://download.pytorch.org/whl/cu113`
 5. Run the python script `python download_data.py`.
-This script downloads and processes the classification datasets used in the paper. While running the script, you will see messages like `Skipping line 199: expected 43 fields, saw 44`, this is expected, and can be ignored.
+This script downloads and processes the classification datasets used in the paper. While running the script, you will see messages like `Skipping line 199: expected 43 fields, saw 44`, this is expected, and can be ignored. -->
 
                          
-## Running an experiment
+<!-- ## Running an experiment
 The experiment script `run_self_training_experiment.py` requires 3 arguments:
 - `experiment_name`: an identifier for the experiment
 - `dataset_name`: the name of one of the datasets under the "datasets/" directory. The following datasets are fetched using the download script: `20_newsgroup`, `ag_news`, `dbpedia`, `imdb`, `isear` and `yahoo_answers`. Any dataset can be added, see [below](#running-on-additional-datasets).
@@ -65,13 +67,13 @@ NOTE: Following this work, we performed a thorough evaluation regarding the robu
 The repository enables downloading the paper datasets with `python download_data.py`. In order to run an experiment on a new dataset, create a folder under `datasets/` with the following files:
 - `class_names.txt`: a list of all the dataset target class names, separated by newlines.
 - `unlabeled.csv`: a csv with a `text` column, containing texts to be used for creating the pseudo-labeled self-training set.
-- `test.csv`: a csv with labeled data for model evaluation, which contains a `text` column, as well as a `label` column specifying the class name of the correct target class for the text.
+- `test.csv`: a csv with labeled data for model evaluation, which contains a `text` column, as well as a `label` column specifying the class name of the correct target class for the text. -->
 
 ## Reference
 Ariel Gera, Alon Halfon, Eyal Shnarch, Yotam Perlitz, Liat Ein-Dor and Noam Slonim (2022). 
 [Zero-Shot Text Classification with Self-Training](https://aclanthology.org/2022.emnlp-main.73). EMNLP 2022
 
-Please cite: 
+<!-- Please cite: 
 ```
 @inproceedings{gera2022zero,
   title={Zero-Shot Text Classification with Self-Training},
@@ -84,7 +86,7 @@ Please cite:
   url={https://aclanthology.org/2022.emnlp-main.73},
   pages={1107--1119}
 }
-```
+``` -->
 
 ## License
 This work is released under the Apache 2.0 license. The full text of the license can be found in [LICENSE](LICENSE).
