@@ -1,4 +1,4 @@
-![license](https://img.shields.io/github/license/IBM/zero-shot-classification-boost-with-self-training)  ![python](https://img.shields.io/badge/python-3.9-blue)
+![python](https://img.shields.io/badge/python-3.9-blue) ![class](https://karlstratos.com/)
 # Zero-shot Classification Boost with Self-training
 
 Code to reproduce the zero-shot self-training experiments from [Gera et al. (2022)](#reference). 
